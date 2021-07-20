@@ -1,9 +1,10 @@
 import { useHistory, useParams } from "react-router-dom";
-import useFetch from "./useFetch";
+//import useFetch from "./useFetch";
+import useFetchdata from "./useFetchdata";
 
 const BlogDetails = () => {
   const { id } = useParams();
-  const { data: blog, isPending, error } = useFetch(' http://localhost:8000/blogs/' + id)
+  const { data: blog, isPending, error } = useFetchdata(' http://localhost:8000/blogs/' + id)
   const history = useHistory();
  // const data = new FormData();
 
