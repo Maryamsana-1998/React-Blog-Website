@@ -106,6 +106,7 @@ const Create = (props) => {
         {!isPendingd && !update && <button onClick={handlePost}>Add Blog </button>}
         {isPendingd && !update && <button disabled> Adding blog ... </button>}
         {update && <button onClick={handleUpdate}>Update Blog</button>}
+       
       </form>
     </div>
   );

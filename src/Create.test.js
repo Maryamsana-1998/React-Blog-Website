@@ -38,11 +38,18 @@ describe('Create component functionality', () => {
         expect(txt.props().value).toBe('mario');
         
     });
- /*
-    it('Test add button', () => {
-     
-    });
+ 
+    it('Test add button', async () => {
+        const wrapper = mount(<Create  />);
+        const buttons = wrapper.find('button')
+       // const button = wrapper.find('div h2 form button'); 
+      /*   const mockCallBack = jest.fn(); */
+      /*   button.simulate('click'); */
+      /*   expect(mockCallBack.mock.calls.length).toEqual(1); */
+        expect(buttons).toHaveLength(1);
 
+    });
+/*
     it('Test update button', () => {
      
     }); */
